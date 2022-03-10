@@ -485,13 +485,13 @@ canvas1.create_image(0, 0, image=img,
 
 # defane the button on the main window
 teacher = Button(root, text="Teacher", padx=30, pady=10,
-                 bg="#F08080", font=("", 12, "bold"), fg="white", command=lambda: On_click(0))
+                 bg="#F08080", font=("", 12, "bold"), fg="white", state="disabled", command=lambda: On_click(0))
 student = Button(root, text="Student", padx=30, pady=10,
                  bg="#F08080", font=("", 12, "bold"), fg="white", command=lambda: On_click(1))
 
-button1_canvas = canvas1.create_window(660, 350, anchor="nw", window=teacher)
+button1_canvas = canvas1.create_window(660, 420, anchor="nw", window=teacher)
 
-button2_canvas = canvas1.create_window(660, 420, anchor="nw", window=student)
+button2_canvas = canvas1.create_window(660, 350, anchor="nw", window=student)
 
 
 root.mainloop()
